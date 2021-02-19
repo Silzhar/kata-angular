@@ -9,11 +9,11 @@ export class KataService {
 
   constructor() { }
 
-  getDetails(): Observable<Details> {
-    const detailList: Observable<Details> = (
+  // getDetails(): Observable<Details> {
+  //   const detailList: Observable<Details> = (
 
-    ) as Observable<Details>;
-  }
+  //   ) as Observable<Details>;
+  // }
 }
 
 export interface Details {

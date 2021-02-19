@@ -1,0 +1,41 @@
+.kata {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding-top: 40px;
+  margin: auto;
+  width: 1000px;
+  height: 600px;
+
+  &__info {
+    margin-top: 30px;
+    color: grey;
+  }
+
+  p{
+    margin-left: 40px;
+  }
+
+  &__logo {
+    padding: 20px;
+    width: 600px;
+
+    &--img {
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      width: 200px;
+      height: 140px;
+      text-align: center;
+    }
+
+    &--img:hover {
+      width: 250px;
+      height: 180px;
+      transition: 0.4s;
+    }
+  }
+}
