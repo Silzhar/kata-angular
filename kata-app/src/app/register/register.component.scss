@@ -1,0 +1,22 @@
+.form{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding-top: 40px;
+  margin: auto;
+  width: 1000px;
+  height: 600px;
+
+  &__fieldset {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+
+    &--error {
+      color: red;
+    }
+  }
+}
