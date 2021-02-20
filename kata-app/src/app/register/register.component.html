@@ -1,0 +1,40 @@
+<p>register works!</p>
+<h2>User data:</h2>
+
+<form novalidate (ngSubmit)="onUserTryToSubmit()" [formGroup]="createUser">
+    <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name" placeholder="Nora M. Buchanan">
+        <div class="error" *ngIf="!createUser.get('name').valid && (createUser.get('name').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <label for="email">Email:</label>
+        <input type="text" id="email" formControlName="email" placeholder="invision@invisionapp.com">
+        <div class="error" *ngIf="!createUser.get('email').valid && (createUser.get('email').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" formControlName="phone" placeholder="+144-3412-4422">
+        <div class="error" *ngIf="!createUser.get('phone').valid && (createUser.get('phone').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <label for="location">Texto:</label>
+        <input type="text" id="location" formControlName="location" placeholder="New York, NY">
+        <div class="error" *ngIf="!createUser.get('location').valid && (createUser.get('location').dirty || submitted)">
+            Error en el campo
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <input type="submit" title="Create">
+    </fieldset>
+</form>

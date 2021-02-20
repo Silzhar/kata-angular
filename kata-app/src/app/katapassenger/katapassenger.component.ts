@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { User } from '../kata.service';
 
 @Component({
   selector: 'app-katapassenger',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./katapassenger.component.scss']
 })
 export class KatapassengerComponent implements OnInit {
+  @Input() users: User[] = [];
 
   constructor() { }
 
