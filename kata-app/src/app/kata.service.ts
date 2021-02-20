@@ -5,17 +5,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class KataService {
-  // public kata: Details[] = [];
   private users: User[] = [];
   public user : User = null;
   public lastUserId: number = 0;
 
   constructor() { }
 
-  // getDetails(): Observable<Details> {
-  //   const detailList: Observable<Details[]> as Observable<Details[]>;
-  //   return detailList;
-  // }
   public saveUser(user: User) {
     this.lastUserId++;
     user.id = this.lastUserId;
@@ -27,12 +22,6 @@ export class KataService {
   }
 
 }
-
-// export interface Details {
-//   id: number;
-//   name: string;
-//   image: string;
-// }
 
 export interface User {
   id: number;
